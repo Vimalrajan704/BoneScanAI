@@ -89,7 +89,7 @@ async function analyzeImage() {
     formData.append('image', uploadedFile);
 
     try {
-        const response = await fetch('http://localhost:5000/analyze', {
+        const response = await fetch('https://bonescanai-api.onrender.com/analyze', {
             method: 'POST',
             body: formData,
         });
